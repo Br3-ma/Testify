@@ -90,7 +90,7 @@ class APIController extends Controller
             ]);
             // Handle the response, you might want to check for success or log the result
             $responseData = json_decode($response->getBody(), true);
-            dd($responseData);
+            dd($response);
             // ... (handle the $responseData as needed)
             return response()->json($responseData);
         } catch (RequestException $e) {
