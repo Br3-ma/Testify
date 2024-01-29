@@ -62,9 +62,11 @@
                             <div class="col-lg-12 w-full">
                                 <form id="smsForm" action="{{ route('send-sms') }}" method="POST">
                                     @csrf
-                                    <textarea name="message" id="message" cols="50" rows="5"></textarea>
+                                    <input placeholder="ex. 260 747 0777" name="phone" class="form-control input-group" type="text">
+                                    <br><br>
+                                    <textarea placeholder="Message" name="message" id="message" class="form-control input-group" cols="50" rows="5"></textarea>
                                     
-                                    <button type="button" class="btn btn-primary button" id="submitBtn">Send</button>
+                                    <button type="button" class="btn btn-primary button bg-primary text-white white" id="submitBtn">Send</button>
                                 </form>
                             </div>
                         </div>
