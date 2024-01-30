@@ -105,7 +105,7 @@ class APIController extends Controller
         $type = '0';
         $dlr = '1';
         $destination = $request->input('phone');
-        $source = 'Mighty Finance Solution';
+        $source = 'Mightyfin';
     
         // API endpoint
         $apiEndpoint = "http://rslr.connectbind.com:8080/bulksms/bulksms";
