@@ -166,10 +166,10 @@
                     data: formData,
                     success: function(response) {
                         // Handle success, you can do something with the response if needed
-                        console.log(response.data);
+                        console.log(response);
 
                         // Append the response to the element with id "results"
-                        $('#results').append(response.data);
+                        $('#results').append(response);
                     },
                     error: function(error) {
                         // Handle error, you can display an error message if needed
